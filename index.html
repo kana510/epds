@@ -8,13 +8,98 @@
 </head>
 <body>
  <p>産後の気分についておたずねします。あなたも赤ちゃんもお元気ですか。最近のあなたの気分をチェックしてみましょう。今日だけでなく、過去7日間にあなたが感じたことに最も近い答えに〇をつけてください。必ず10項目全部に答えてください。</p>
-  <p>笑うことができたし、物事の面白い面もわかった<br>
-  <input type="radio" name="q1" value="0">いつもと同様にできた
-  <input type="radio" name="q1" value="1">あまりできなかった
-  <input type="radio" name="q1" value="2">明らかにできなかった
-  <input type="radio" name="q1" value="3">全くできなかった
-  </p>
+  <form action="/epds_result/" method="post">
 
+<ul>
+
+<li>
+<p class="ttl"><span>1</span>笑うことができたし、物事の面白い面もわかった。</p>
+<p class="item"><input id="q1-1" name="q1" type="radio" value="0"><label for="q1-1">いつもと同様にできた。</label><br>
+<input id="q1-2" name="q1" type="radio" value="1"><label for="q1-2">あまりできなかった。</label><br>
+<input id="q1-3" name="q1" type="radio" value="2"><label for="q1-3">明らかにできなかった。</label><br>
+<input id="q1-4" name="q1" type="radio" value="3"><label for="q1-4">全くできなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>2</span>物事を楽しみにして待った。</p>
+<p class="item"><input id="q2-1" name="q2" type="radio" value="0"><label for="q2-1">いつもと同様にできた。</label><br>
+<input id="q2-2" name="q2" type="radio" value="1"><label for="q2-2">あまりできなかった。</label><br>
+<input id="q2-3" name="q2" type="radio" value="2"><label for="q2-3">明らかにできなかった。</label><br>
+<input id="q2-4" name="q2" type="radio" value="3"><label for="q2-4">全くできなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>3</span>物事がうまくいかなった時、自分を不必要に責めた。</p>
+<p class="item"><input id="q3-1" name="q3" type="radio" value="3"><label for="q3-1">はい、たいていそうだった。</label><br>
+<input id="q3-2" name="q3" type="radio" value="2"><label for="q3-2">はい、時々そうだった。</label><br>
+<input id="q3-3" name="q3" type="radio" value="1"><label for="q3-3">いいえ、あまり度々ではなかった。</label><br>
+<input id="q3-4" name="q3" type="radio" value="0"><label for="q3-4">いいえ、全くそうではなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>4</span>はっきりとした理由もないのに不安になったり、心配したりした。</p>
+<p class="item"><input id="q4-1" name="q4" type="radio" value="0"><label for="q4-1">いいえ、そうではなかった。</label><br>
+<input id="q4-2" name="q4" type="radio" value="1"><label for="q4-2">ほとんどそうではなかった。</label><br>
+<input id="q4-3" name="q4" type="radio" value="2"><label for="q4-3">はい、時々あった。</label><br>
+<input id="q4-4" name="q4" type="radio" value="3"><label for="q4-4">はい、しょっちゅうあった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>5</span>はっきりとした理由もないのに恐怖に襲われた。</p>
+<p class="item"><input id="q5-1" name="q5" type="radio" value="0"><label for="q5-1">いいえ、そうではなかった。</label><br>
+<input id="q5-2" name="q5" type="radio" value="1"><label for="q5-2">ほとんどそうではなかった。</label><br>
+<input id="q5-3" name="q5" type="radio" value="2"><label for="q5-3">はい、時々あった。</label><br>
+<input id="q5-4" name="q5" type="radio" value="3"><label for="q5-4">はい、しょっちゅうあった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>6</span>することがたくさんあって大変だった。</p>
+<p class="item"><input id="q6-1" name="q6" type="radio" value="3"><label for="q6-1">はい、たいてい対処できなかった。</label><br>
+<input id="q6-2" name="q6" type="radio" value="2"><label for="q6-2">はい、いつものようにうまく対処できなかった。</label><br>
+<input id="q6-3" name="q6" type="radio" value="1"><label for="q6-3">いいえ、たいていうまく対処した。</label><br>
+<input id="q6-4" name="q6" type="radio" value="0"><label for="q6-4">いいえ、普段通りに対処した。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>7</span>不幸せな気分なので、眠りにくかった。</p>
+<p class="item"><input id="q7-1" name="q7" type="radio" value="3"><label for="q7-1">はい、ほとんどいつもそうだった。</label><br>
+<input id="q7-2" name="q7" type="radio" value="2"><label for="q7-2">はい、時々そうだった。</label><br>
+<input id="q7-3" name="q7" type="radio" value="1"><label for="q7-3">いいえ、あまり度々ではなかった。</label><br>
+<input id="q7-4" name="q7" type="radio" value="0"><label for="q7-4">いいえ、全くそうではなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>8</span>悲しくなったり、惨めになったりした。</p>
+<p class="item"><input id="q8-1" name="q8" type="radio" value="3"><label for="q8-1">はい、たいていそうだった。</label><br>
+<input id="q8-2" name="q8" type="radio" value="2"><label for="q8-2">はい、かなりしばしばそうだった。</label><br>
+<input id="q8-3" name="q8" type="radio" value="1"><label for="q8-3">いいえ、あまり度々ではなかった。</label><br>
+<input id="q8-4" name="q8" type="radio" value="0"><label for="q8-4">いいえ、全くそうではなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>9</span>不幸せな気分だったので、泣いていた。</p>
+<p class="item"><input id="q9-1" name="q9" type="radio" value="3"><label for="q9-1">はい、たいていそうだった。</label><br>
+<input id="q9-2" name="q9" type="radio" value="2"><label for="q9-2">はい、かなりしばしばそうだった。</label><br>
+<input id="q9-3" name="q9" type="radio" value="1"><label for="q9-3">ほんの時々あった。</label><br>
+<input id="q9-4" name="q9" type="radio" value="0"><label for="q9-4">いいえ、全くそうではなかった。</label></p>
+</li>
+
+<li>
+<p class="ttl"><span>10</span>自分自身を傷つけるという考えが浮かんできた。</p>
+<p class="item"><input id="q10-1" name="q10" type="radio" value="3"><label for="q10-1">はい、かなりしばしばそうだった。</label><br>
+<input id="q10-2" name="q10" type="radio" value="2"><label for="q10-2">時々そうだった。</label><br>
+<input id="q10-3" name="q10" type="radio" value="1"><label for="q10-3">めったになかった。</label><br>
+<input id="q10-4" name="q10" type="radio" value="0"><label for="q10-4">全くなかった。</label></p>
+</li>
+
+</ul>
+
+<div class="epds-form-btn">
+	<div><input name="submit" value="判定結果を見る" type="submit"></div>
+</div>
+</form>
+
+  
   <img src="./606_color.png" alt="保健師画像"/>
 </body>
 </html>
